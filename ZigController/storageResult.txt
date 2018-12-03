@@ -1,0 +1,245 @@
+﻿/home/pi/8i/zig/scripts/zigcommand.py master pushgetmountstatus
+
+---> R01: ssh pi@192.168.50.8 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R02: ssh pi@192.168.50.115 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R03: ssh pi@192.168.50.68 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R04: ssh pi@192.168.50.23 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R05: ssh pi@192.168.50.87 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R06: ssh pi@192.168.50.167 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R07: ssh pi@192.168.50.104 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R08: ssh pi@192.168.50.251 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R09: ssh pi@192.168.50.108 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R10: ssh pi@192.168.50.24 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R02(192.168.50.115): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.115", "rig": "R02"}, "message": "Success", "result": 1, "success": true}
+
+---> R01(192.168.50.8): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.8", "rig": "R01"}, "message": "Success", "result": 1, "success": true}
+
+---> R07(192.168.50.104): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.104", "rig": "R07"}, "message": "Success", "result": 1, "success": true}
+
+---> R06(192.168.50.167): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.167", "rig": "R06"}, "message": "Success", "result": 1, "success": true}
+
+---> R08(192.168.50.251): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.251", "rig": "R08"}, "message": "Success", "result": 1, "success": true}
+
+---> R05(192.168.50.87): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.87", "rig": "R05"}, "message": "Success", "result": 1, "success": true}
+
+---> R03(192.168.50.68): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.68", "rig": "R03"}, "message": "Success", "result": 1, "success": true}
+
+---> R04(192.168.50.23): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.23", "rig": "R04"}, "message": "Success", "result": 1, "success": true}
+
+---> R09(192.168.50.108): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.108", "rig": "R09"}, "message": "Success", "result": 1, "success": true}
+
+---> R10(192.168.50.24): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.24", "rig": "R10"}, "message": "Success", "result": 1, "success": true}
+{
+    "R01": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.8 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.8",
+            "rig": "R01"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R02": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.115 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.115",
+            "rig": "R02"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R03": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.68 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.68",
+            "rig": "R03"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R04": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.23 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.23",
+            "rig": "R04"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R05": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.87 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.87",
+            "rig": "R05"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R06": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.167 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.167",
+            "rig": "R06"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R07": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.104 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.104",
+            "rig": "R07"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R08": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.251 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.251",
+            "rig": "R08"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R09": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.108 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.108",
+            "rig": "R09"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R10": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.24 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.24",
+            "rig": "R10"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "missing": [],
+    "mountstatus": true
+}

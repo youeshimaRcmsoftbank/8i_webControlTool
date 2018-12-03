@@ -1,0 +1,306 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .center {
+        border: 0px solid #aaa;
+        width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .center2 {
+        width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .parent {
+        padding: 10px;
+        text-align: center;
+        width: 400px;
+        top: 100px;
+    }
+
+    .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateY(-50%) translateX(-50%);
+        transform: translateY(-50%) translateX(-50%);
+        padding: 20px;
+    }
+
+    .tablecell {
+        border: 1px solid #aaa;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    #overlay {
+        /*オーバーレイのCSS*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .flex {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay-inner {
+        padding: 10px 60px;
+        background-color: #FFF;
+        text-align: center;
+    }
+
+    #open-btn, #open-btn2, #close-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 30px;
+        background-color: #eee;
+        border: solid #ccc 1px;
+        cursor: pointer;
+    }
+
+    .is-hide {
+        display: none;
+    }
+</style>
+
+<center>
+    <div class="parent">
+        <div class="inner">
+            <button id="open-btn" type="button" onclick="javascript: ExecStoragCommand();">システムチェック！</button>
+            <center>
+                <table border="1">
+                    <tr>
+                        <th>camNo</th>
+                        <th>Healthy</th>
+                    </tr>
+                    <tr>
+                        <td>Cam1</td>
+                        <td id="cam1"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam2</td>
+                        <td id="cam2"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam3</td>
+                        <td id="cam3"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam4</td>
+                        <td id="cam4"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam5</td>
+                        <td id="cam5"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam6</td>
+                        <td id="cam6"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam7</td>
+                        <td id="cam7"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam8</td>
+                        <td id="cam8"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam9</td>
+                        <td id="cam9"></td>
+                    </tr>
+                    <tr>
+                        <td>Cam10</td>
+                        <td id="cam10"></td>
+                    </tr>
+                </table>
+                </center>
+                <BR />
+                <button id="open-btn2" type="button" onclick="javascript: ExecStoragOffCommand();">シューティングモードに移行</button>
+                <center>
+                    <table border="1">
+                        <tr>
+                            <th>camNo</th>
+                            <th>Healthy</th>
+                        </tr>
+                        <tr>
+                            <td>Cam1</td>
+                            <td id="cam1"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam2</td>
+                            <td id="cam2"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam3</td>
+                            <td id="cam3"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam4</td>
+                            <td id="cam4"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam5</td>
+                            <td id="cam5"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam6</td>
+                            <td id="cam6"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam7</td>
+                            <td id="cam7"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam8</td>
+                            <td id="cam8"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam9</td>
+                            <td id="cam9"></td>
+                        </tr>
+                        <tr>
+                            <td>Cam10</td>
+                            <td id="cam10"></td>
+                        </tr>
+                    </table>
+                </center>
+                <br />
+        </div>
+    </div>
+</center>
+<div id="overlay" class="close">
+    <div class="flex">
+        <div class="overlay-inner">
+            <p>しばらくお待ちください。。。サーバー処理中です。。。</p>
+        </div>
+
+    </div>
+</div>
+<form id="comm">
+    <input type="hidden" name="command" />
+</form>
+<script src="~/js/jquery.js"></script>
+
+
+<script type="text/javascript">
+    var ajax = new XMLHttpRequest();
+
+    jQuery(function ($) {
+        $("#open-btn").click(function () {
+            $("#overlay").fadeIn();
+
+            document.all.item("cam1")[0].innerText = "";
+            document.all.item("cam2")[0].innerText = "";
+            document.all.item("cam3")[0].innerText = "";
+            document.all.item("cam4")[0].innerText = "";
+            document.all.item("cam5")[0].innerText = "";
+            document.all.item("cam6")[0].innerText = "";
+            document.all.item("cam7")[0].innerText = "";
+            document.all.item("cam8")[0].innerText = "";
+            document.all.item("cam9")[0].innerText = "";
+            document.all.item("cam10")[0].innerText = "";
+
+
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4) {
+                    if (ajax.status <= 300) {
+                        $("#overlay").fadeOut();
+                        var data = JSON.parse(ajax.response);
+                        document.all.item("cam1")[0].innerText = data.cam1;
+                        document.all.item("cam2")[0].innerText = data.cam2;
+                        document.all.item("cam3")[0].innerText = data.cam3;
+                        document.all.item("cam4")[0].innerText = data.cam4;
+                        document.all.item("cam5")[0].innerText = data.cam5;
+                        document.all.item("cam6")[0].innerText = data.cam6;
+                        document.all.item("cam7")[0].innerText = data.cam7;
+                        document.all.item("cam8")[0].innerText = data.cam8;
+                        document.all.item("cam9")[0].innerText = data.cam9;
+                        document.all.item("cam10")[0].innerText = data.cam10;
+
+                    }
+
+                }
+            }
+
+            document.all.item("command").value = "1";
+            var formElement = document.getElementById("comm");
+            var formData = new FormData(formElement);
+
+
+            ajax.open("POST", "./", true);
+            ajax.send(formData);
+
+        });
+        $("#open-btn2").click(function () {
+            $("#overlay").fadeIn();
+
+            document.all.item("cam1")[1].innerText = "";
+            document.all.item("cam2")[1].innerText = "";
+            document.all.item("cam3")[1].innerText = "";
+            document.all.item("cam4")[1].innerText = "";
+            document.all.item("cam5")[1].innerText = "";
+            document.all.item("cam6")[1].innerText = "";
+            document.all.item("cam7")[1].innerText = "";
+            document.all.item("cam8")[1].innerText = "";
+            document.all.item("cam9")[1].innerText = "";
+            document.all.item("cam10")[1].innerText = "";
+
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState == 4) {
+                    if (ajax.status <= 300) {
+                        $("#overlay").fadeOut();
+                        var data = JSON.parse(ajax.response);
+                        document.all.item("cam1")[1].innerText = data.cam1;
+                        document.all.item("cam2")[1].innerText = data.cam2;
+                        document.all.item("cam3")[1].innerText = data.cam3;
+                        document.all.item("cam4")[1].innerText = data.cam4;
+                        document.all.item("cam5")[1].innerText = data.cam5;
+                        document.all.item("cam6")[1].innerText = data.cam6;
+                        document.all.item("cam7")[1].innerText = data.cam7;
+                        document.all.item("cam8")[1].innerText = data.cam8;
+                        document.all.item("cam9")[1].innerText = data.cam9;
+                        document.all.item("cam10")[1].innerText = data.cam10;
+
+                    }
+
+                }
+            }
+            document.all.item("command").value = "2";
+            var formElement = document.getElementById("comm");
+            var formData = new FormData(formElement);
+
+            ajax.open("POST", "./", true);
+            ajax.send(formData);
+
+        });
+        /*
+        $(".close").click(function () {
+            $("#overlay").fadeOut();
+        });
+        */
+        // バブリングを停止
+        $(".overlay-inner").click(function (event) {
+            event.stopPropagation();
+        });
+    });
+</script>

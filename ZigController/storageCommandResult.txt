@@ -1,0 +1,639 @@
+Last login: Sun Aug 26 21:34:07 2018 from 192.168.50.158
+pi@raspberrypi:~ $ storage
+/home/pi/8i/zig/scripts/zigcommand.py master pushstoragemode 1
+
+---> R01: ssh pi@192.168.50.8 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R02: ssh pi@192.168.50.115 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R03: ssh pi@192.168.50.68 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R04: ssh pi@192.168.50.23 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R05: ssh pi@192.168.50.87 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R06: ssh pi@192.168.50.167 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R07: ssh pi@192.168.50.104 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R08: ssh pi@192.168.50.251 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R09: ssh pi@192.168.50.108 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R10: ssh pi@192.168.50.24 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2
+
+---> R02(192.168.50.115): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.115", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R02", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R08(192.168.50.251): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.251", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R08", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R07(192.168.50.104): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.104", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R07", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R06(192.168.50.167): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.167", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R06", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R05(192.168.50.87): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.87", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R05", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R03(192.168.50.68): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.68", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R03", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R04(192.168.50.23): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.23", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R04", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R09(192.168.50.108): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.108", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R09", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R10(192.168.50.24): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo mkdir -p /media/pi/yicam1", "sudo mount /dev/sdb1 /media/pi/yicam1"], "ipaddress": "192.168.50.24", "missing": [], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": true}, "yicam1": {"path": "/media/pi/yicam1", "success": true}}, "rig": "R10", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n", "storagemode": 1, "success": true}, "message": "Successfully mounted yicam0; Successfully mounted yicam1; ", "result": 1, "success": true}
+
+---> R01(192.168.50.8): Done
+
+{"data": {"commands": ["sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo mkdir -p /media/pi/yicam0", "sudo mount /dev/sda1 /media/pi/yicam0", "sudo umount -a > /dev/null 2>&1 ", "sudo rmdir /media/pi/yicam0", "sudo /home/pi/8i/zig/scripts/usbon 1", "sudo umount -a > /dev/null 2>&1 ", "sudo /home/pi/8i/zig/scripts/usbon 1"], "ipaddress": "192.168.50.8", "missing": ["yicam1"], "mounts": {"yicam0": {"path": "/media/pi/yicam0", "success": false}, "yicam1": {"path": "/media/pi/yicam1", "success": false}}, "rig": "R01", "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n turning on\n turning on\n", "storagemode": 1, "success": false}, "message": "Failed to mount yicam0; Failed to mount yicam1; ", "result": -1, "success": false}
+{
+    "R01": {
+        "data": {
+            "command": "ssh pi@192.168.50.8 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo rmdir /media/pi/yicam0",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1"
+            ],
+            "ipaddress": "192.168.50.8",
+            "missing": [
+                "yicam1"
+            ],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": false
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": false
+                }
+            },
+            "rig": "R01",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n turning on\n turning on\n",
+            "storagemode": 1,
+            "success": false
+        },
+        "message": "Failed to mount yicam0; Failed to mount yicam1; ",
+        "result": -1,
+        "success": false
+    },
+    "R02": {
+        "data": {
+            "command": "ssh pi@192.168.50.115 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.115",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R02",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R03": {
+        "data": {
+            "command": "ssh pi@192.168.50.68 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.68",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R03",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R04": {
+        "data": {
+            "command": "ssh pi@192.168.50.23 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.23",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R04",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R05": {
+        "data": {
+            "command": "ssh pi@192.168.50.87 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.87",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R05",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R06": {
+        "data": {
+            "command": "ssh pi@192.168.50.167 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.167",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R06",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R07": {
+        "data": {
+            "command": "ssh pi@192.168.50.104 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.104",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R07",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R08": {
+        "data": {
+            "command": "ssh pi@192.168.50.251 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.251",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R08",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R09": {
+        "data": {
+            "command": "ssh pi@192.168.50.108 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.108",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R09",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "R10": {
+        "data": {
+            "command": "ssh pi@192.168.50.24 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py storagemode 1 retry=2 ",
+            "commands": [
+                "sudo umount -a > /dev/null 2>&1 ",
+                "sudo /home/pi/8i/zig/scripts/usbon 1",
+                "sudo mkdir -p /media/pi/yicam0",
+                "sudo mount /dev/sda1 /media/pi/yicam0",
+                "sudo mkdir -p /media/pi/yicam1",
+                "sudo mount /dev/sdb1 /media/pi/yicam1"
+            ],
+            "ipaddress": "192.168.50.24",
+            "missing": [],
+            "mounts": {
+                "yicam0": {
+                    "path": "/media/pi/yicam0",
+                    "success": true
+                },
+                "yicam1": {
+                    "path": "/media/pi/yicam1",
+                    "success": true
+                }
+            },
+            "rig": "R10",
+            "stdout": "turning on\n FUSE exfat 1.2.5\n WARN: volume was not unmounted cleanly.\n",
+            "storagemode": 1,
+            "success": true
+        },
+        "message": "Successfully mounted yicam0; Successfully mounted yicam1; ",
+        "result": 1,
+        "success": true
+    },
+    "success": false
+}
+/home/pi/8i/zig/scripts/zigcommand.py master pushgetmountstatus
+
+---> R01: ssh pi@192.168.50.8 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R02: ssh pi@192.168.50.115 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R03: ssh pi@192.168.50.68 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R04: ssh pi@192.168.50.23 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R05: ssh pi@192.168.50.87 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R06: ssh pi@192.168.50.167 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R07: ssh pi@192.168.50.104 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+---> R08: ssh pi@192.168.50.251 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+
+---> R09: ssh pi@192.168.50.108 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R10: ssh pi@192.168.50.24 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus
+
+---> R01(192.168.50.8): Done
+
+{"data": {"0": {"mountstatus": false, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": false, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.8", "rig": "R01"}, "message": "Success", "result": 1, "success": true}
+
+---> R02(192.168.50.115): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.115", "rig": "R02"}, "message": "Success", "result": 1, "success": true}
+
+---> R05(192.168.50.87): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.87", "rig": "R05"}, "message": "Success", "result": 1, "success": true}
+
+---> R07(192.168.50.104): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.104", "rig": "R07"}, "message": "Success", "result": 1, "success": true}
+
+---> R08(192.168.50.251): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.251", "rig": "R08"}, "message": "Success", "result": 1, "success": true}
+
+---> R03(192.168.50.68): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.68", "rig": "R03"}, "message": "Success", "result": 1, "success": true}
+
+---> R06(192.168.50.167): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.167", "rig": "R06"}, "message": "Success", "result": 1, "success": true}
+
+---> R04(192.168.50.23): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.23", "rig": "R04"}, "message": "Success", "result": 1, "success": true}
+
+---> R09(192.168.50.108): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.108", "rig": "R09"}, "message": "Success", "result": 1, "success": true}
+
+---> R10(192.168.50.24): Done
+
+{"data": {"0": {"mountstatus": true, "path": "/media/pi/yicam0/DCIM"}, "1": {"mountstatus": true, "path": "/media/pi/yicam1/DCIM"}, "ipaddress": "192.168.50.24", "rig": "R10"}, "message": "Success", "result": 1, "success": true}
+{
+    "R01": {
+        "data": {
+            "0": {
+                "mountstatus": false,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": false,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.8 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.8",
+            "rig": "R01"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R02": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.115 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.115",
+            "rig": "R02"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R03": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.68 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.68",
+            "rig": "R03"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R04": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.23 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.23",
+            "rig": "R04"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R05": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.87 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.87",
+            "rig": "R05"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R06": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.167 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.167",
+            "rig": "R06"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R07": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.104 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.104",
+            "rig": "R07"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R08": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.251 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.251",
+            "rig": "R08"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R09": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.108 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.108",
+            "rig": "R09"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "R10": {
+        "data": {
+            "0": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam0/DCIM"
+            },
+            "1": {
+                "mountstatus": true,
+                "path": "/media/pi/yicam1/DCIM"
+            },
+            "command": "ssh pi@192.168.50.24 -o ConnectTimeout=5 /home/pi/8i/zig/scripts/zigcommand.py mountstatus",
+            "ipaddress": "192.168.50.24",
+            "rig": "R10"
+        },
+        "message": "Success",
+        "result": 1,
+        "success": true
+    },
+    "missing": [
+        "R01/0",
+        "R01/1"
+    ],
+    "mountstatus": false
+}
